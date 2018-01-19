@@ -1,0 +1,68 @@
+/*type selector*/
+body{
+	font-family: sans-serif,arial,helvetica;
+	margin-top: 0;
+	padding-top: 0;
+}
+h1{
+	margin: 0;
+}
+h2, h3, h4, h5, h6{
+	color: tomato;
+}
+/*class selectors*/
+.container{
+	width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nav{
+	background: wheat;
+	padding: 1em 2em;
+}
+.intro{
+	color: aqua;
+	font-size: 1.2em;
+}
+
+/*ID selectors*/
+#header, #footer {
+	background-color: black;
+	color: white;
+	padding: 2em;
+}
+#main{
+	margin: 1em 2em;
+}
+
+/*Universal selector*/ /*targets everything*/
+/**{
+	margin: 0;
+	padding: 0;
+}*/
+
+/*descendant selectors*/
+.nav li{
+	display: inline;
+	margin-right: 1em;
+}
+.nav li a{
+	color: #fff;
+}
+
+/*child selectors*/
+.nav li > a{
+	text-decoration: none;
+}
+
+/*adjacent sibling selectors*/
+h3 + h4 {
+	margin-top: 2em;
+}
+
+/*link pseudo-class selectors*/
+a:link { color: green;}
+a:visited {color: pink;}
+a:focus{color: aqua;}
+a:hover {color: red;}
+a:active{color: wheat;}
